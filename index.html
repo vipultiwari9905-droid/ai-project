@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajaj Ansari - Online Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Ajaj Ansari</h1>
+                <p>Premium Shopping</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="cart">
+                <span id="cart-count">0</span>
+                <button onclick="toggleCart()">🛒 Cart</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Ajaj Ansari Store</h2>
+                <p>Discover premium quality products at unbeatable prices</p>
+                <button class="cta-btn" onclick="scrollToProducts()">Shop Now</button>
+            </div>
+        </section>
+
+        <section id="products" class="products-section">
+            <h2>Our Products</h2>
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be loaded here -->
+            </div>
+        </section>
+
+        <section id="about" class="about-section">
+            <h2>About Ajaj Ansari</h2>
+            <p>We are committed to providing high-quality products with excellent customer service. Your satisfaction is our priority.</p>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p>📧 Email: info@ajajansari.com</p>
+                <p>📞 Phone: +1 (555) 123-4567</p>
+                <p>📍 Address: 123 Shopping Street, City, State 12345</p>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="toggleCart()">&times;</span>
+            <h2>Shopping Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <strong>Total: $<span id="cart-total">0.00</span></strong>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ajaj Ansari. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
